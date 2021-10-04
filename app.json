@@ -15,15 +15,15 @@
         },
         "API_ID": {
             "description": "Get this value from https://my.telegram.org",
-            "value": ""
+            "value": "3310601"
         },
         "API_HASH": {
             "description": "Get this value from https://my.telegram.org",
-            "value": ""
+            "value": "ad2c76a95f2f3decb60024bb918d20c6"
         },
         "PDISK_API_KEY": {
             "description": "Get this from https://www.pdisk.me/use-api (must change)",
-            "value": ""
+            "value": "0306635c1e2ed7ff9a4381ae2411b05f"
         },
         "CHANNEL": {
             "description": "Enter your telegram channel Username (must change and without @)",
@@ -31,7 +31,7 @@
         },
         "THUMB_URL": {
             "description": "Enter the permanent thumbnail image url can use this @HK_telegraph_BOT",
-            "value" : ""
+            "value" : "https://telegra.ph/file/b31707efb14d17b2e629e.jpg"
         }
     },
     "addons": [],
