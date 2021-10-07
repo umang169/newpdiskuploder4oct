@@ -85,7 +85,7 @@ async def get_ptitle(url):
 
 async def pdisk_up(link):
     url = 'http://linkapi.net/open/create_item'
-    params = {'api_key': PDISK_API_KEY, 'content_src': Link, 'link_type': 'link'}
+    params = {'api_key': PDISK_API_KEY, 'content_src': v_url, 'link_type': 'link'}
     async with aiohttp.ClientSession() as session:
         async with session.get(url, params=params, raise_for_status=True) as response:
             data = await res.json()
