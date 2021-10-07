@@ -94,9 +94,9 @@ async def pdisk_up(link):
         title_pdisk = '@' + CHANNEL + title_new
     res = requests.get(
         'http://linkapi.net/open/create_item?link_type=link&content_src=' + link + '&source=2000&cover_url='+THUMB_URL+'&api_key=' + PDISK_API_KEY + '&dir_id=0&title=' + title_pdisk + '&description=Join_' + CHANNEL + '_for_more_like_this')
-    data = res.json()
-    data = dict(data)
-    print(data)
+    data = await res.json()
+            print(data["data"].get("item_id"))
+            return data["data"].get("item_id")
     v_id = data['data']['item_id']
     v_url = 'https://www.pdisks.com/share-video?videoid=' + v_id
     return (v_url)
